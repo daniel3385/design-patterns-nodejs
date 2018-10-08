@@ -17,9 +17,9 @@ myWeatherStation.registerObserver(myForecastDisplay);
 myWeatherStation.setTemperature(25);
 myWeatherStation.setHumidity(80);
 myWeatherStation.setPressure(1);
-myWeatherStation.update();
+myWeatherStation.notifyObservers();
 
 myWeatherStation.setTemperature(28);
 myWeatherStation.setHumidity(95);
 myWeatherStation.setPressure(0.8);
-myWeatherStation.update();
+myWeatherStation.notifyObservers();
