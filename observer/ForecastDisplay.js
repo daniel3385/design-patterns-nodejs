@@ -6,5 +6,8 @@ class ForecastDisplay extends Display{
     }
 
     update(){
+	console.log("update ForecastDisplay.");
     }
 };
+module.exports = ForecastDisplay;
+

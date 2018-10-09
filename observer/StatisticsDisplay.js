@@ -6,5 +6,8 @@ class StatisticsDisplay extends Display{
     }
 
     update(){
+	console.log("update StatisticsDisplay.");
     }
 };
+module.exports = StatisticsDisplay;
+
