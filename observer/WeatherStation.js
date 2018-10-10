@@ -1,6 +1,7 @@
 class WeatherStation{
     constructor(){
 	this.observersList = new Array();
+	this.temperature = 0;
     }
 
     registerObserver(observer){
@@ -13,12 +14,15 @@ class WeatherStation{
     }
 
     notifyObservers(){
-	this.observersList.forEach(notifyFunction);
-
-	function notifyFunction(observer) {
-	    observer.update();
+	for(let i=0; i<this.observersList.length; i++){
+	    this.observersList[i].update({"temperature":this.temperature})
 	}
-	    
+    }
+    setTemperature(temperature){
+	this.temperature = temperature;
+    }
+    getTemperature(){
+	return this.temperature;
     }
 }; 
 module.exports = WeatherStation; 

@@ -14,12 +14,8 @@ myWeatherStation.registerObserver(myStatisticsDisplay);
 myWeatherStation.registerObserver(myThirdPartyDisplay);
 myWeatherStation.registerObserver(myForecastDisplay);
 
-//myWeatherStation.setTemperature(25);
-//myWeatherStation.setHumidity(80);
-//myWeatherStation.setPressure(1);
+myWeatherStation.setTemperature(25);
 myWeatherStation.notifyObservers();
 
-//myWeatherStation.setTemperature(28);
-//myWeatherStation.setHumidity(95);
-//myWeatherStation.setPressure(0.8);
+myWeatherStation.setTemperature(28);
 myWeatherStation.notifyObservers();
