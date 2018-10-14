@@ -1,4 +1,9 @@
 const Expresso = require("./Expresso.js")
+const DarkRoast = require("./DarkRoast.js")
+const Mocha = require("./Mocha.js")
+const Whip = require("./Whip.js")
+const HouseBlend = require("./HouseBlend.js")
+const Soy = require("./Soy.js")
 
 function printBeverage(beverage){
    console.log(beverage.getDescription() + " $" + beverage.cost()); 

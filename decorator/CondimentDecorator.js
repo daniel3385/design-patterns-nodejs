@@ -2,8 +2,8 @@ const Beverage = require("./Beverage.js")
 
 class CondimentDecorator extends Beverage{
     constructor(beverage){
-	this.beverage = beverage;
 	super();
+	this.beverage = beverage;
     }
     cost(){}
 }

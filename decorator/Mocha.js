@@ -1,14 +1,15 @@
 const CondimentDecorator = require("./CondimentDecorator.js")
 
-class Mocha extends condimentDecorator{
+class Mocha extends CondimentDecorator{
     constructor(beverage){
-	this.beverage = beverage;
 	super();
+	this.beverage = beverage;
     }
     getDescription(){
 	return this.beverage.getDescription() + ",Mocha";
+    }
     cost(){
-	return this.beverage.cost + 0.20;
+	return this.beverage.cost() + 0.20;
     }
 }
 
